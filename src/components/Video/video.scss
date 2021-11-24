@@ -1,0 +1,50 @@
+@import "./../../styles/variables";
+
+.video-title {
+  background-color: $primary-color;
+  color: $white;
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.arabic-text-style {
+  font-family: $cairo;
+}
+
+.overview-heading {
+  font-weight: 700;
+}
+
+.app-download-btn-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  .app-download-button {
+    width: 35%;
+    height: 10%;
+    @media #{$sm} {
+      width: 40%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.app-download-button{
+  background: transparent;
+  border: none;
+  width: 40%;
+
+}
+.app-download-button:focus{
+
+  outline: none;
+}
+// .android-store img , .apple-store-wrap img{
+
+//   width: 100%;
+// }

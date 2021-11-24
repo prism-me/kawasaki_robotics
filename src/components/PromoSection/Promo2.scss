@@ -1,0 +1,61 @@
+@import "./../../styles/variables";
+
+.promo2-heading {
+  text-align: center !important;
+  font-weight: 700;
+  font-size: 24px;
+  // margin-top: 1rem;
+}
+.promo-section {
+  // background-color: #f2f2f2;
+  padding: 5rem 0;
+  @media #{$sm} {
+    margin: 0rem 0 !important;
+    padding: 2rem 0;
+  }
+}
+.promo2-card-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media #{$sm} {
+    justify-content: space-between;
+  }
+  @media #{$md} {
+    justify-content: start;
+  }
+}
+.promo2-card-style {
+  height: 25vh;
+  width: 175px;
+  box-shadow: 0px 0px 10px #938c8c;
+  @media #{$sm} {
+    width: 48%;
+    height: 25vh;
+    margin-bottom: 1rem;
+  }
+  @media #{$md} {
+    width: 195px;
+    height: 18vh;
+    margin: 2%;
+    // margin-bottom: 1rem;
+  }
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media #{$sm} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.promo-arabic-text {
+  h5 {
+    font-family: $cairo;
+  }
+}

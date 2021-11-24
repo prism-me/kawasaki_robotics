@@ -1,0 +1,28 @@
+@import "./../../styles/variables";
+
+.language-option-list {
+  color: #fff !important;
+}
+.item-list-wrap {
+  color: #000 !important;
+}
+.popup-small-screen {
+  @media #{$sm} {
+    left: 55%;
+    top: 68%;
+  }
+  @media #{$md} {
+    left: 75%;
+    top: 68%;
+  }
+}
+.language-toggle-list {
+  color: #ef6f61 !important;
+  display: none;
+  @media #{$sm} {
+    display: block;
+  }
+  @media #{$md} {
+    display: block;
+  }
+}

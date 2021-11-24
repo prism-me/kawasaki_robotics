@@ -1,0 +1,133 @@
+@import "./../../styles/variables";
+
+
+.lead{
+
+  font-size: 1.1rem !important;
+  margin-bottom: .6rem;
+}
+.top-lead{
+
+  margin-top:2rem;
+}
+.lead-below-image{
+  text-align: center;
+}
+.hero-animation-img{
+
+text-align: center;
+}
+
+.hero-section-wrap {
+  background-position: center 25%;
+  background-size: cover;
+  height: 750px;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  padding-top: 0;
+  @media #{$sm} {
+    height: 315px;
+    margin-top: 78px;
+  }
+  @media #{$md} {
+    margin-top: 85px;
+    height: 500px;
+  }
+}
+.banner-section-row {
+  @media #{$sm} {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.banner-image {
+  @media #{$sm} {
+    height: 50vh;
+    text-align: center;
+    margin-top: 4rem;
+    text-align: center;
+    img {
+      height: 100%;
+      //   display: none;
+    }
+
+  }
+}
+.banner-section {
+  @media #{$sm} {
+    text-align: center;
+  }
+}
+
+.hero-section-button {
+  display: flex;
+  // justify-content: space-between;
+  @media #{$sm} {
+    justify-content: center;
+  }
+}
+.hero-section-arabic-button {
+  display: flex;
+  justify-content: flex-end;
+  @media #{$sm} {
+    justify-content: center;
+  }
+}
+.banner-arabic-style {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.app-store-button-wrap {
+  a {
+    width: 38%;
+    height: 10%;
+    @media #{$sm} {
+      width: 40%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.apple-store-wrap {
+  margin-left: 5%;
+  @media #{$sm} {
+    margin-left: none;
+  }
+}
+
+.banner-heading {
+  font-weight: 700 !important;
+}
+.banner-arabic-heading {
+  text-align: right;
+  @media #{$sm} {
+    text-align: center;
+  }
+  h1 {
+    font-family: $cairo !important;
+  }
+  p {
+    font-family: $cairo;
+  }
+}
+
+
+.android-store ,.apple-store-wrap{
+  background: transparent;
+  border: none;
+  width: 40%;
+
+}
+.android-store:focus , .apple-store-wrap:focus{
+
+  outline: none;
+}
+.android-store img , .apple-store-wrap img{
+
+  width: 100%;
+}

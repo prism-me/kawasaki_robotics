@@ -1,0 +1,38 @@
+@import "./../../styles/variables";
+
+.social-list-wrap {
+  text-align: end;
+  @media #{$sm} {
+    text-align: center;
+  }
+}
+.copyrights-text-wrap {
+  @media #{$sm} {
+    text-align: center;
+  }
+}
+
+.footer-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  .copyrights-text-wrap {
+    display: flex;
+    justify-content: flex-end;
+
+    @media #{$sm} {
+      justify-content: center;
+    }
+  }
+  .footer-icon-wrap-col {
+    display: flex;
+    justify-content: flex-start;
+    @media #{$sm} {
+      justify-content: center;
+    }
+  }
+}
+
+.copyright-arabic-text {
+  font-family: $cairo;
+}

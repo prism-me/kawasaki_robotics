@@ -1,0 +1,75 @@
+@import "./../../styles/variables";
+
+.about-buraq-wrap {
+  margin: 3rem 0;
+  font-family: $quicksand;
+  @media #{$sm} {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .about-text-wrap {
+    height: 100%;
+    // font-family: $quicksand;
+    display: flex;
+    align-items: center;
+    @media #{$sm} {
+      margin-top: 1rem;
+      text-align: justify;
+    }
+
+    .about-buraq-heading {
+      font-size: 24px;
+      font-weight: 700;
+      display: block;
+      width: 100%;
+    }
+  }
+  .about-arabic-text-wrap {
+    @media #{$sm} {
+      text-align: right;
+    }
+  }
+  .about-image-wrap {
+    width: 80%;
+    height: 100%;
+    @media #{$sm} {
+      text-align: center;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      @media #{$sm} {
+        width: 85%;
+      }
+    }
+  }
+
+  //! --Abrabic Style--
+  .about-arabic-style {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .about-buraq-row {
+    @media #{$sm} {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.about-text-detail {
+  font-size: 18px;
+}
+
+.about-arabic-text {
+  h5 {
+    font-family: $cairo;
+  }
+  p {
+    font-family: $cairo;
+  }
+}
